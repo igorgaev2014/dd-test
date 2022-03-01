@@ -44,19 +44,19 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
-  margin-top: 90px;
   background-color: $yellow;
-  color: $basic-grey;
+  color: white;
+  padding: 25px 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 20px -10px;
+  }
 }
 
 p {
   font-size: 30px;
-}
-
-li {
-  font-size: 24px;
 }
 
 ul {
@@ -65,4 +65,19 @@ ul {
 
 footer {
   background-color: black;
+  padding: 0;
+}
+
+section li {
+  font-family: $font-secondary;
+  font-size: 18px;
+}
+
+section span {
+  color: white;
+  background-color: black;
+}
+
+header {
+  background-color: $yellow;
 }

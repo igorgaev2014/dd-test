@@ -6,63 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Fira+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
   <header id="header">
     <nav class="main-nav">
       <div class="wrapper">
         <ul class="main-nav__list">
-          <li><a href="#about">Что такое JavaScript</a></li>
-          <li><a href="#features">Что может JavaScript в браузере?</a></li>
-          <li><a href="#special">Что делает JavaScript особенным?</a></li>
+          <li><a href="#about">Определение</a></li>
+          <li><a href="#features">Браузер</a></li>
+          <li><a href="#special">Особенности</a></li>
         </ul>
       </div>
     </nav>
-    <img src="./img/logo.png" class="logo" alt="logo">
+    <img class="logo" src="./img/big-bg.jpg" class="logo" alt="logo">
 
   </header>
   <main class="wrapper">
-    <section>
+    <section class="intro">
       <h1>Введение в Javascript</h1>
       <p>Давайте посмотрим, что такого особенного в JavaScript, чего можно достичь с его помощью и какие другие технологии хорошо с ним работают.</p>
     </section>
-    <section id="about">
-      <h2>Что такое JavaScript?</h2>
-      <p>Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке веб-страницы.</p>
-    </section>
-    <section id="features">
-      <h2>Что может JavaScript в браузере?</h2>
-      <p>Современный JavaScript – это «безопасный» язык программирования. Он не предоставляет низкоуровневый доступ к памяти или процессору, потому что изначально был создан для браузеров, не требующих этого. В браузере JavaScript может:</p>
-      <ul>
-        <li>
-          Добавлять новый HTML-код на страницу, изменять существующее содержимое, модифицировать стили.
-        </li>
-        <li>
-          Реагировать на действия пользователя, щелчки мыши, перемещения указателя, нажатия клавиш.
-        </li>
-        <li>
-          Запоминать данные на стороне клиента («local storage»).
-        </li>
-      </ul>
-    </section>
-    <section id="special">
-      <h2>Что делает JavaScript особенным?</h2>
-      <p>Как минимум, три сильные стороны JavaScript:</p>
-      <ol>
-        <li>Полная интеграция с HTML/CSS.</li>
-        <li>Простые вещи делаются просто.</li>
-        <li>Поддерживается всеми основными браузерами и включён по умолчанию.</li>
-      </ol>
-    </section>
+    <section class="info">
+      <article id="about">
+        <h2>Определение</h2>
+        <p>Изначально JavaScript был создан, чтобы «сделать веб-страницы живыми».
+          <br><br>
+          Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке веб-страницы.
+          <br><br>
+          Скрипты распространяются и выполняются, как простой текст. Им не нужна специальная подготовка или компиляция для запуска.</p>
+      </article>
+      <article id="features">
+        <h2>Браузер</h2>
+        <p>Современный JavaScript – это «безопасный» язык программирования. Он не предоставляет низкоуровневый доступ к памяти или процессору, потому что изначально был создан для браузеров, не требующих этого. В браузере JavaScript может:</p>
+        <ul>
+          <li>
+            Добавлять новый HTML-код на страницу, изменять существующее содержимое, модифицировать стили.
+          </li>
+          <li>
+            Реагировать на действия пользователя, щелчки мыши, перемещения указателя, нажатия клавиш.
+          </li>
+          <li>
+            Запоминать данные на стороне клиента («local storage»).
+          </li>
+          <li>
+            Отправлять сетевые запросы на удалённые сервера, скачивать и загружать файлы (технологии AJAX и COMET).
+          </li>
+          <li>
+            Получать и устанавливать куки, задавать вопросы посетителю, показывать сообщения.
+          </li>
+        </ul>
+      </article>
+      <article id="special">
+        <h2>Особенности</h2>
+        <p>Как минимум, <span>три</span> сильные стороны JavaScript:</p>
+        <ol>
+          <li>Полная интеграция с HTML/CSS.</li>
+          <li>Простые вещи делаются просто.</li>
+          <li>Поддерживается всеми основными браузерами и включён по умолчанию.</li>
+        </ol>
+        <p>JavaScript – это единственная браузерная технология, сочетающая в себе все эти три вещи.
+          <br><br>
+          Вот что делает JavaScript особенным. Вот почему это самый распространённый инструмент для создания интерфейсов в браузере.</p>
+      </article>
+    <section>
   </main>
   <footer>
     <div class="wrapper">
-      <a class="return" href="#header">В начало страницы</a>
+      <a class="return" href="#header">В начало страницы ↑</a>
       <ul class="links">
         <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">MDN</a></li>
         <li><a href="https://learn.javascript.ru/">Learn JS</a></li>
+        <li><a href="https://www.freecodecamp.org/">freecodecamp</a></li>
       </ul>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
