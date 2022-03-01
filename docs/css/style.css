@@ -102,7 +102,7 @@ footer {
 }
 @media (max-width: 767px) {
   .main-nav__list a {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
