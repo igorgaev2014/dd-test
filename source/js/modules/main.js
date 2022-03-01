@@ -42,8 +42,8 @@ function getDayInfo(date) {
   return convertDate(new Date(swapDate(date)));
 }
 
-console.log(getDayInfo("01.01.2022"));
-console.log(getDayInfo("12.15.2021"));
-
 let date = prompt("Введите дату в формате 'MM.DD.YYYY'");
 alert(getDayInfo(date));
+
+console.log(getDayInfo("01.01.2022"));
+console.log(getDayInfo("12.15.2021"));
